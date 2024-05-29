@@ -1,0 +1,85 @@
+{
+  "name": "hooz-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@iconify/react": "^4.1.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/react-query": "^1.2.9",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/reapop": "^3.0.0",
+    "@types/styled-components": "^5.1.26",
+    "axios": "^1.4.0",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "dotenv-webpack": "^8.0.1",
+    "js-cookie": "^3.0.5",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-activity": "^2.1.3",
+    "react-avatar-editor": "^13.0.0",
+    "react-dom": "^18.2.0",
+    "react-infinite-scroller": "^1.2.6",
+    "react-modal": "^3.16.1",
+    "react-query": "^3.39.3",
+    "react-quill": "^2.0.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.11.1",
+    "react-scripts": "5.0.1",
+    "reapop": "^4.2.1",
+    "sass": "^1.62.1",
+    "styled-components": "^6.0.0-rc.1",
+    "typescript": "^4.4.2",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "webpack serve --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build-js": "babel src --out-dir dist --extensions .ts,.tsx --source-maps",
+    "build-all": "yarn build && yarn build-js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.5",
+    "@types/js-cookie": "^3.0.3",
+    "@types/react-avatar-editor": "^13.0.0",
+    "@types/react-infinite-scroller": "^1.2.3",
+    "@types/react-modal": "^3.16.0",
+    "babel-loader": "^9.1.2",
+    "html-webpack-plugin": "^5.5.1",
+    "ts-loader": "^9.4.2",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
+  }
+}
